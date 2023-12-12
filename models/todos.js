@@ -18,8 +18,9 @@ const getListsFromFile = (callback) => {
 };
 
 module.exports = class Todo {
-  constructor(t) {
-    this.title = t;
+  constructor(id, t) {
+    this.id = id;
+    this.todo = t;
   }
 
   save() {
